@@ -25,11 +25,14 @@ function tweet(msg) do
 end
 ```
 
+### Usage
+
+>>>>>>> add readme
 ```bash
 $ lua-include -o output.lua redis-cmd.lua
 ```
 
-becomes:
+output.lua:
 
 ```lua
 function tweet(msg) do
