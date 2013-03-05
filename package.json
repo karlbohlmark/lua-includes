@@ -1,0 +1,15 @@
+{
+  "name": "lua-include",
+  "version": "0.0.1",
+  "description": "Super simple lua comment includes for building redis scripts",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test"
+  },
+  "repository": "git@github.com:karlbohlmark/lua-includes.git",
+  "author": "",
+  "license": "BSD",
+  "dependencies": {
+    "commander": "~1.1.1"
+  }
+}
