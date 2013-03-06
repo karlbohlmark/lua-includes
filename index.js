@@ -2,8 +2,8 @@ var fs = require('fs')
   , read = fs.readFileSync
   , write = fs.writeFileSync
   , path = require('path')
-var lua = require('luaparse')
 
+module.exports = inline
 
 if (!module.parent) {
   var program = require('commander')
@@ -22,10 +22,6 @@ if (!module.parent) {
   write(program.out, inlined)
 }
 
-
-
-module.exports = inline
-
 function inline(file) {
   var dir = path.dirname(file)
   var source = read(file, 'utf8').toString()
@@ -40,6 +36,6 @@ function inline(file) {
   includes.forEach(function (match) {
     source = source.replace(match[0], inline(path.join(dir, match[1])))
   })
-
+  
   return source
 }

@@ -27,7 +27,6 @@ end
 
 ### Usage
 
->>>>>>> add readme
 ```bash
 $ lua-include -o output.lua redis-cmd.lua
 ```
